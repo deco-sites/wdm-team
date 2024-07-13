@@ -115,7 +115,7 @@ export default function Header({
                 id={item?.id}
                 href={item?.href ?? "#"}
                 target={item?.href.includes("http") ? "_blank" : "_self"}
-                class={`bg-[#D9D9D9] h-8 px-3 flex justify-center items-center rounded-md no-underline`}
+                class={`bg-primary text-primary-content h-8 px-3 flex justify-center items-center rounded-md no-underline`}
               >
                 {item?.text}
               </a>
@@ -123,7 +123,7 @@ export default function Header({
             <a
               href={github.urlRepository}
               target="_blank"
-              class="bg-[#D9D9D9] h-8 px-3 flex justify-center items-center rounded-md no-underline"
+              class="bg-transparent h-8 px-3 flex justify-center items-center rounded-md no-underline"
             >
               Star us {github.stars}
             </a>
