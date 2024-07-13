@@ -1,0 +1,15 @@
+{
+  "name": "pagina",
+  "path": "/pagina",
+  "sections": [
+    {
+      "__resolveType": "site/sections/PageComponent/PageComponent.tsx",
+      "titleTab": "Tab1",
+      "contentTab": "Conteudo"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

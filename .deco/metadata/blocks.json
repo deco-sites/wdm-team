@@ -118,5 +118,11 @@
     "path": "/card",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-pagina-250321.json": {
+    "name": "pagina",
+    "path": "/pagina",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }
