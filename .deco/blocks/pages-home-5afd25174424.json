@@ -1,42 +1,137 @@
 {
-    "name": "Home",
-    "path": "/",
-    "sections": [
-      {
-        "__resolveType": "Header"
+  "name": "Home",
+  "path": "/",
+  "sections": [
+    {
+      "__resolveType": "Header"
+    },
+    {
+      "__resolveType": "site/sections/Hero.tsx",
+      "title": "<p>Click here to tweak this text however you want.</p>",
+      "cta": [],
+      "description": "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away."
+    },
+    {
+      "__resolveType": "site/sections/Logos.tsx"
+    },
+    {
+      "__resolveType": "site/sections/ImageWithParagraph.tsx"
+    },
+    {
+      "__resolveType": "site/sections/ImageWithParagraph.tsx",
+      "placement": "right"
+    },
+    {
+      "__resolveType": "site/sections/BlogPosts.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Testimonials.tsx",
+      "arrows": true
+    },
+    {
+      "__resolveType": "site/sections/Faq.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Layout/Footer/Footer.tsx",
+      "logo": {
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11627/922af858-afd2-4b3e-a3c9-d956dc2e5927",
+        "link": "https://deco.cx/#",
+        "alt": "deco.cx"
       },
-      {
-        "__resolveType": "site/sections/Hero.tsx",
-        "title": "<p>Click here to tweak this text however you want.</p>",
-        "cta": [],
-        "description": "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away."
+      "footerText": {
+        "CopyRightText": "© 2024 All rights reserved",
+        "label": "Made with <3 in Brazil",
+        "termsLink": "https://deco.cx/terms-of-use",
+        "PrivacyPolicyLink": "https://deco.cx/privacy-policy"
       },
-      {
-        "__resolveType": "site/sections/Logos.tsx"
-      },
-      {
-        "__resolveType": "site/sections/ImageWithParagraph.tsx"
-      },
-      {
-        "__resolveType": "site/sections/ImageWithParagraph.tsx",
-        "placement": "right"
-      },
-      {
-        "__resolveType": "site/sections/BlogPosts.tsx"
-      },
-      {
-        "__resolveType": "site/sections/Testimonials.tsx",
-        "arrows": true
-      },
-      {
-        "__resolveType": "site/sections/Faq.tsx"
-      },
-      {
-        "__resolveType": "Footer"
-      }
-    ],
-    "__resolveType": "website/pages/Page.tsx",
-    "seo": {
-      "__resolveType": "website/sections/Seo/SeoV2.tsx"
+      "footerTopics": [
+        {
+          "topics": [
+            {
+              "topic": "Login",
+              "topicLink": "https://admin.deco.cx/"
+            },
+            {
+              "topic": "Pricing",
+              "topicLink": "https://deco.cx/en/pricing"
+            },
+            {
+              "topic": "Contact us",
+              "topicLink": "https://deco.cx/en/contact-us"
+            }
+          ],
+          "title": "Platform",
+          "titleLink": "https://deco.cx/"
+        },
+        {
+          "topics": [
+            {
+              "topic": "Docs",
+              "topicLink": "https://deco.cx/docs/en"
+            },
+            {
+              "topic": "Blog",
+              "topicLink": "https://deco.cx/en/blog"
+            },
+            {
+              "topic": "Community",
+              "topicLink": "https://deco.cx/en/community"
+            }
+          ],
+          "title": "Resources",
+          "titleLink": "https://deco.cx/"
+        },
+        {
+          "topics": [
+            {
+              "topic": "AI Assistant",
+              "topicLink": "https://deco.cx/ai-assistant"
+            },
+            {
+              "topic": "Frontend Platform",
+              "topicLink": "https://www.deco.cx/"
+            }
+          ],
+          "title": "Products",
+          "titleLink": "https://deco.cx/"
+        },
+        {
+          "topics": [
+            {
+              "topic": "Headless Commerce",
+              "topicLink": "https://www.deco.cx/headless-commerce"
+            },
+            {
+              "topic": "Master SEO",
+              "topicLink": "https://www.deco.cx/seo-for-ecommerce"
+            },
+            {
+              "topic": "Boost PageSpeed",
+              "topicLink": "https://www.deco.cx/speed-up-your-site"
+            }
+          ],
+          "title": "Solutions",
+          "titleLink": "https://deco.cx/#"
+        }
+      ],
+      "social": [
+        {
+          "label": "Linkedin",
+          "link": "https://www.linkedin.com/company/deco-cx/"
+        },
+        {
+          "label": "Github",
+          "link": "https://github.com/deco-cx"
+        },
+        {
+          "label": "Discord",
+          "link": "https://discord.gg/YsGgt8EQCZ"
+        }
+      ]
     }
+  ],
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
   }
+}
