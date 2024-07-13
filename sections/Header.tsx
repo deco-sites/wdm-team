@@ -77,14 +77,14 @@ export default function Header({
                   {link.label}
                 </a>
                 {link.subLinks &&
-                  <ul class="hidden group-hover:flex absolute top-[44px] z-20 flex-col gap-3 p-4 w-52 bg-transparent backdrop-blur-2xl rounded-xl">
+                  <ul class="hidden group-hover:flex absolute top-[44px] z-20 flex-col gap-3 p-4 w-52 bg-white opacity-90 rounded-xl">
                     {link.subLinks.map(subLink => {
                       return (
                         <li>
                           <a
                             href={subLink.url}
                             aria-label={subLink.label}
-                            class={`link no-underline`}
+                            class={`link no-underline hover:text-[#02F67C]`}
                           >
                             {subLink.label}
                           </a>
