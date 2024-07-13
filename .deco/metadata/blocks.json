@@ -105,9 +105,13 @@
     "blockType": "sections",
     "__resolveType": "site/sections/Theme/Theme.tsx"
   },
-  "/.deco/blocks/pages-Preview-245886.json": {
-    "name": "Preview",
-    "path": "/preview",
+  "/.deco/blocks/Preview%20%2Fsections%2FCardPreview%2FCardPreview.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/CardPreview/CardPreview.tsx"
+  },
+  "/.deco/blocks/pages-Card-587243.json": {
+    "name": "Card",
+    "path": "/card",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
   }

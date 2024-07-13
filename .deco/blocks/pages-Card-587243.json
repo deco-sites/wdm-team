@@ -1,0 +1,70 @@
+{
+  "name": "Card",
+  "path": "/card",
+  "sections": [
+    {
+      "__resolveType": "site/sections/CardPreview/CardPreview.tsx",
+      "title": "Seções da página",
+      "cards": [
+        {
+          "tags": [],
+          "author": "Brendon",
+          "excerpt": "4 components",
+          "date": "teste",
+          "readingTime": "teste",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11627/8c0098a2-bcf1-442f-8133-fade81735abd",
+          "title": "Pricing"
+        },
+        {
+          "tags": [],
+          "title": "Hero Banner",
+          "author": "Brendon",
+          "excerpt": "3 components",
+          "date": "teste",
+          "readingTime": "teste",
+          "image": "https://preline.co/assets/thumbnails/examples/pricing-sections.webp"
+        },
+        {
+          "tags": [],
+          "title": "Formulary Hero",
+          "author": "Brendon",
+          "excerpt": "10 components",
+          "date": "teste",
+          "readingTime": "teste",
+          "image": "https://preline.co/assets/thumbnails/examples/hero-sections.webp"
+        },
+        {
+          "tags": [],
+          "title": "Hero Banner",
+          "author": "Brendon",
+          "excerpt": "3 components",
+          "date": "teste",
+          "readingTime": "teste",
+          "image": "https://preline.co/assets/thumbnails/examples/pricing-sections.webp"
+        },
+        {
+          "tags": [],
+          "title": "Formulary Hero",
+          "author": "Brendon",
+          "excerpt": "10 components",
+          "date": "teste",
+          "readingTime": "teste",
+          "image": "https://preline.co/assets/thumbnails/examples/hero-sections.webp"
+        },
+        {
+          "tags": [],
+          "title": "Admin",
+          "author": "Brendon",
+          "excerpt": "1 component",
+          "date": "teste",
+          "readingTime": "teste",
+          "image": "https://preline.co/assets/thumbnails/examples/application-page-admin.webp"
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
