@@ -105,8 +105,18 @@
     "blockType": "sections",
     "__resolveType": "site/sections/Theme/Theme.tsx"
   },
-  "/.deco/blocks/deco.json": {
+  "/.deco/blocks/GitHubStarsDeco.json": {
+    "blockType": "loaders",
+    "__resolveType": "site/loaders/getGitHubStars.ts"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FCardPreview%2FCardPreview.tsx.json": {
     "blockType": "sections",
-    "__resolveType": "site/sections/Theme/Theme.tsx"
+    "__resolveType": "site/sections/CardPreview/CardPreview.tsx"
+  },
+  "/.deco/blocks/pages-Card-587243.json": {
+    "name": "Card",
+    "path": "/card",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }
