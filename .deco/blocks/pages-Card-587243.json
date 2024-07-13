@@ -9,56 +9,128 @@
         {
           "tags": [],
           "author": "Brendon",
+          "excerpt": "1 component",
+          "date": "teste",
+          "readingTime": "teste",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11627/6facd348-ad8a-46fe-85b7-0781fce8f6ad",
+          "title": "Secões de preço",
+          "href": "/"
+        },
+        {
+          "tags": [],
+          "title": "Secões de equipe",
+          "author": "Brendon",
+          "excerpt": "3 components",
+          "date": "teste",
+          "readingTime": "teste",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11627/729f46b0-2064-4795-aa66-c1163e51a3ee",
+          "href": "/"
+        },
+        {
+          "tags": [],
+          "title": "Depoimentos",
+          "author": "Brendon",
           "excerpt": "4 components",
           "date": "teste",
           "readingTime": "teste",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11627/8c0098a2-bcf1-442f-8133-fade81735abd",
-          "title": "Pricing"
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11627/7ad82507-0071-48ef-bf2f-a32c1350e89f",
+          "href": "/"
         },
         {
           "tags": [],
-          "title": "Hero Banner",
+          "title": "Secões de faq",
           "author": "Brendon",
           "excerpt": "3 components",
           "date": "teste",
           "readingTime": "teste",
-          "image": "https://preline.co/assets/thumbnails/examples/pricing-sections.webp"
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11627/33f48249-71a2-402e-937e-ad821745d0a2",
+          "href": "/"
         },
         {
           "tags": [],
-          "title": "Formulary Hero",
+          "title": "Caracteristicas: Estatísticas",
           "author": "Brendon",
           "excerpt": "10 components",
           "date": "teste",
           "readingTime": "teste",
-          "image": "https://preline.co/assets/thumbnails/examples/hero-sections.webp"
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11627/d15b46fa-84f8-47e7-93b7-44db8ed01bda",
+          "href": "/"
         },
         {
           "tags": [],
-          "title": "Hero Banner",
-          "author": "Brendon",
-          "excerpt": "3 components",
-          "date": "teste",
-          "readingTime": "teste",
-          "image": "https://preline.co/assets/thumbnails/examples/pricing-sections.webp"
-        },
-        {
-          "tags": [],
-          "title": "Formulary Hero",
+          "title": "Formulário hero",
           "author": "Brendon",
           "excerpt": "10 components",
           "date": "teste",
           "readingTime": "teste",
-          "image": "https://preline.co/assets/thumbnails/examples/hero-sections.webp"
-        },
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11627/a4234e74-abdb-46eb-a6f4-d625967404c4",
+          "href": "/"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/CardPreview/CardPreview.tsx",
+      "title": "Seções da página",
+      "cards": [
         {
           "tags": [],
-          "title": "Admin",
           "author": "Brendon",
           "excerpt": "1 component",
           "date": "teste",
           "readingTime": "teste",
-          "image": "https://preline.co/assets/thumbnails/examples/application-page-admin.webp"
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11627/6facd348-ad8a-46fe-85b7-0781fce8f6ad",
+          "title": "Secões de preço",
+          "href": "/"
+        },
+        {
+          "tags": [],
+          "title": "Secões de equipe",
+          "author": "Brendon",
+          "excerpt": "3 components",
+          "date": "teste",
+          "readingTime": "teste",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11627/729f46b0-2064-4795-aa66-c1163e51a3ee",
+          "href": "/"
+        },
+        {
+          "tags": [],
+          "title": "Depoimentos",
+          "author": "Brendon",
+          "excerpt": "4 components",
+          "date": "teste",
+          "readingTime": "teste",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11627/7ad82507-0071-48ef-bf2f-a32c1350e89f",
+          "href": "/"
+        },
+        {
+          "tags": [],
+          "title": "Secões de faq",
+          "author": "Brendon",
+          "excerpt": "3 components",
+          "date": "teste",
+          "readingTime": "teste",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11627/33f48249-71a2-402e-937e-ad821745d0a2",
+          "href": "/"
+        },
+        {
+          "tags": [],
+          "title": "Caracteristicas: Estatísticas",
+          "author": "Brendon",
+          "excerpt": "10 components",
+          "date": "teste",
+          "readingTime": "teste",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11627/d15b46fa-84f8-47e7-93b7-44db8ed01bda",
+          "href": "/"
+        },
+        {
+          "tags": [],
+          "title": "Formulário hero",
+          "author": "Brendon",
+          "excerpt": "10 components",
+          "date": "teste",
+          "readingTime": "teste",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11627/a4234e74-abdb-46eb-a6f4-d625967404c4",
+          "href": "/"
         }
       ]
     }
