@@ -4,6 +4,7 @@
 
 import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
+import * as $$$0 from "./loaders/getGitHubStars.ts";
 import * as $$$$$$0 from "./sections/BlogPosts.tsx";
 import * as $$$$$$1 from "./sections/Faq.tsx";
 import * as $$$$$$2 from "./sections/Footer.tsx";
@@ -18,6 +19,9 @@ import * as $$$$$$7 from "./sections/Testimonials.tsx";
 import * as $$$$$$8 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
+  "loaders": {
+    "site/loaders/getGitHubStars.ts": $$$0,
+  },
   "sections": {
     "site/sections/BlogPosts.tsx": $$$$$$0,
     "site/sections/Faq.tsx": $$$$$$1,
