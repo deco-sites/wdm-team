@@ -117,15 +117,23 @@
       "social": [
         {
           "label": "Linkedin",
-          "link": "https://www.linkedin.com/company/deco-cx/"
+          "link": "https://www.linkedin.com/company/deco-cx/",
+          "icon": "Linkedin",
+          "stroke": 15,
+          "alt": "Linkedin"
         },
         {
-          "label": "Github",
-          "link": "https://github.com/deco-cx"
+          "label": "Instagram",
+          "link": "#",
+          "icon": "Github",
+          "stroke": 18,
+          "alt": "Github"
         },
         {
-          "label": "Discord",
-          "link": "https://discord.gg/YsGgt8EQCZ"
+          "icon": "Discord",
+          "link": "https://discord.gg/hBUs29me8Z",
+          "stroke": 15,
+          "alt": "Discord"
         }
       ]
     }

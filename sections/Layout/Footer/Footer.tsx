@@ -1,9 +1,13 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Social from "site/sections/Layout/Footer/Social.tsx";
+import { AvailableIcons } from "site/components/ui/Icon.tsx";
+import Image from "apps/website/components/Image.tsx";
 
 export interface SocialItem {
   link: string;
-  label: "Linkedin" | "Github" | "Discord";
+  stroke: number;
+  icon: AvailableIcons;
+  alt: string;
 }
 
 export interface FooterLogo {
@@ -41,30 +45,31 @@ export default function Footer(
   { social, logo, footerText, footerTopics }: Props,
 ) {
   return (
-    <section class="bg-[#02F67C] relative z-10">
+    <section class="bg-primary relative z-10">
       <div class="max-w-screen-2xl m-auto py-8">
         <div class="px-6 py-8 md:px-[2.03rem] flex flex-col gap-12 lg:justify-between">
           <div class="flex flex-col md:flex-row justify-between gap-8">
             <div class="flex flex-col gap-2">
               <a href={logo?.link} class="grid">
-                <img
-                  src={logo?.src}
+                <Image
+                  src={logo?.src ?? ""}
                   width={130}
                   height={37}
                   alt={logo?.alt}
                   loading="lazy"
+                  fetchPriority="low"
                 />
               </a>
-              <span class="text-[#113032]">
+              <span class="text-primary-content">
                 {footerText?.CopyRightText}
               </span>
-              <span class="pt-1 text-[14px] text-[#113032] font-normal leading-[150%]">
+              <span class="pt-1 text-[14px] text-primary-content font-normal leading-[150%]">
                 {footerText?.label}
               </span>
             </div>
             <div class="flex flex-col md:flex-row gap-4 md:gap-12 lg:gap-20">
               {footerTopics?.map((topicTitle) => (
-                <div class="flex flex-col gap-4 md:gap-5 text-[#113032] opacity-90">
+                <div class="flex flex-col gap-4 md:gap-5 text-primary-content opacity-90">
                   <a
                     href={topicTitle.titleLink}
                     class="font-bold hidden md:block"
@@ -82,7 +87,7 @@ export default function Footer(
                           class="inline-block group"
                         >
                           <div class="mb-[6px]">{textTopic.topic}</div>
-                          <div class="h-[2px] bg-black w-0 group-hover:w-full duration-500">
+                          <div class="h-[2px] bg-base-200 w-0 group-hover:w-full duration-500">
                           </div>
                         </a>
                       </li>
@@ -93,7 +98,7 @@ export default function Footer(
             </div>
           </div>
           <div class="flex flex-col-reverse md:flex-row md:items-center md:justify-between gap-6 lg:gap-4">
-            <div class="flex flex-col md:flex-row gap-5 lg:gap-10 text-[#113032]">
+            <div class="flex flex-col md:flex-row gap-5 lg:gap-10 text-primary-content">
               <a
                 target="_blank"
                 href={footerText?.termsLink}
