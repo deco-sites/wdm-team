@@ -1,1 +1,10 @@
-{"__resolveType":"site/sections/Header.tsx","navigation":{"links":[],"buttons":[]}}
+{
+  "__resolveType": "site/sections/Header.tsx",
+  "navigation": {
+    "links": [],
+    "buttons": []
+  },
+  "github": {
+    "__resolveType": "GitHubStarsDeco"
+  }
+}

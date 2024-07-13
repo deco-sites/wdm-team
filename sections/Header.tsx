@@ -1,12 +1,12 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import Icon from "../components/ui/Icon.tsx";
+import { StarsGithub } from "site/loaders/getGitHubStars.ts";
 
 export interface CTA {
   id?: string;
   href: string;
   text: string;
-  outline?: boolean;
 }
 
 interface LinkProps {
@@ -27,6 +27,7 @@ export interface Nav {
     links: LinkMenu[];
     buttons: CTA[];
   };
+  github: StarsGithub
 }
 
 export default function Header({
@@ -37,58 +38,53 @@ export default function Header({
   },
   navigation = {
     links: [
-      { label: "Resources", url: "/", subLinks: [
-        { label: "Store", url: "/" },
-        { label: "Community", url: "/" },
-        { label: "deco.camp", url: "/" },
-        { label: "Blog", url: "/" },
-        { label: "Customer Stories", url: "/" },
-        { label: "Live Projects", url: "/" },
+      { label: "Produtos", url: "/", subLinks: [
+        { label: "Admin", url: "/" },
+        { label: "Analytics", url: "/" },
+        { label: "Deco.pilot", url: "/" },
+        { label: "Dashboard de Logs", url: "/" },
       ]},
-      { label: "Docs", url: "/" },
-      { label: "Princing", url: "/" },
+      { label: "Documentação", url: "/" },
+      { label: "Recursos", url: "/" },
+      { label: "Empresa", url: "/" },
+      { label: "Contato", url: "/" },
     ],
     buttons: [
-      { id: "sign-in", href: "/", text: "Sign in", outline: true },
-      { id: "try-now", href: "/", text: "Try now", outline: false },
+      { id: "sign-in", href: "/", text: "Entrar" },
     ],
   },
+  github
 }: Nav) {
-
-  const BUTTON_STYLE: Record<string, string> = {
-    normal: 'flex items-center text-[#b6b6b6] md:hover:text-[#fff] font-medium text-[16px] px-4 py-2 transition ease-in-out duration-300',
-    full: 'flex items-center md:w-auto transition-all duration-300 ease-out border-[#02F67C] border-2 text-base text-[#0A2121] bg-[#02F67C] md:hover:bg-[#2FD180] font-medium text-[16px] max-h-[37px] px-4 py-2 rounded-lg md:transition md:ease-in-out md:duration-300'
-  }
 
   return (
     <nav class="drawer drawer-end fixed z-50">
       <input id="mobile-drawer-nav" type="checkbox" class="drawer-toggle" />
 
       {/* main content */}
-      <div class="drawer-content container lg:px-0 px-4 flex gap-8 items-center justify-between py-4">
-        <div class="hidden items-center justify-between lg:flex w-full">
+      <div class="drawer-content container lg:px-0 px-4 flex gap-8 items-center justify-between py-4 backdrop-blur-2xl w-full lg:my-4 lg:p-0 lg:w-fit">
+        <div class="hidden items-center gap-12 lg:flex w-full p-2 border-2 border-[#02F67C] rounded-lg">
           <a href="/">
-            <Image src={logo.src || ""} width={100} height={28} alt={logo.alt} />
+            <Image src={logo.src || ""} width={100} height={28} alt={logo.alt} loading="lazy"/>
           </a>
-          <ul class="relative lg:flex lg:flex-row items-center h-full px-3 py-1.5 rounded-xl bg-[#0035184d] border border-[#FFFFFF33] gap-14 justify-between">
+          <ul class="relative lg:flex lg:flex-row items-center h-full gap-4 justify-between">
             {navigation.links.map((link) => (
-              <li class={link.subLinks ? 'group relative' : ''}>
+              <li class={link.subLinks ? 'group relative before:absolute before:top-4 before:left-0 before:w-full before:h-8' : ''}>
                 <a
                   href={link.url}
                   aria-label={link.label}
-                  class={`link no-underline hover:underline p-4`}
+                  class={`link no-underline hover:text-[#02F67C]`}
                 >
                   {link.label}
                 </a>
                 {link.subLinks &&
-                  <ul class="hidden group-hover:flex absolute top-[37px] z-20 flex-col gap-3 rounded-lg border border-[#FFFFFF33] p-6 bg-[#0035184d] backdrop-blur-2xl">
+                  <ul class="hidden group-hover:flex absolute top-[44px] z-20 flex-col gap-3 p-4 w-52 bg-transparent backdrop-blur-2xl rounded-xl">
                     {link.subLinks.map(subLink => {
                       return (
                         <li>
                           <a
                             href={subLink.url}
                             aria-label={subLink.label}
-                            class={`link no-underline hover:underline p-4`}
+                            class={`link no-underline`}
                           >
                             {subLink.label}
                           </a>
@@ -107,13 +103,24 @@ export default function Header({
                 id={item?.id}
                 href={item?.href ?? "#"}
                 target={item?.href.includes("http") ? "_blank" : "_self"}
-                class={item.outline ? BUTTON_STYLE['normal'] : BUTTON_STYLE['full']}
+                class={`bg-[#D9D9D9] h-8 px-3 flex justify-center items-center rounded-md no-underline`}
               >
                 {item?.text}
               </a>
             ))}
+              <a
+                href={github.urlRepository}
+                target="_blank"
+                class="bg-[#D9D9D9] h-8 px-3 flex justify-center items-center rounded-md no-underline"
+              >
+                Star us {github.stars}
+              </a>
           </ul>
         </div>
+        
+        <a href="/" class="lg:hidden">
+            <Image src={logo.src || ""} width={100} height={28} alt={logo.alt} loading="lazy"/>
+        </a>
 
         <label
           htmlFor="mobile-drawer-nav"
@@ -125,22 +132,25 @@ export default function Header({
 
       {/* sidebar */}
       <aside class="drawer-side z-50">
-        {/* Close when clicking on overlay */}
-        <label
-          htmlFor="mobile-drawer-nav"
-          aria-label="close sidebar"
-          class="drawer-overlay"
-        />
-
-        <div class="flex flex-col gap-8 min-h-full w-80 bg-base-100 text-base-content">
-          <a class="p-4" href="/">
-            <Image
-              src={logo.src || ""}
-              width={100}
-              height={28}
-              alt={logo.alt}
-            />
-          </a>
+        <div class="flex flex-col gap-8 min-h-full bg-base-100 text-base-content w-full bg-transparent backdrop-blur-2xl">
+          <div class="flex justify-between items-center">
+            <a class="p-4" href="/">
+              <Image
+                src={logo.src || ""}
+                width={100}
+                height={28}
+                alt={logo.alt}
+                loading="lazy"
+              />
+            </a>
+            <label
+              htmlFor="mobile-drawer-nav"
+              aria-label="close sidebar"
+              class="cursor-pointer text-lg font-bold p-4"
+            >
+              X
+            </label>
+          </div>
 
           <ul class="menu">
             {navigation?.links.map((link) => {
@@ -171,7 +181,7 @@ export default function Header({
                 id={item?.id}
                 href={item?.href ?? "#"}
                 target={item?.href.includes("http") ? "_blank" : "_self"}
-                class={item.outline ? BUTTON_STYLE['normal'] : BUTTON_STYLE['full']}
+                class={`bg-[#D9D9D9] h-8 px-3 flex justify-center items-center rounded-md no-underline`}
               >
                 {item?.text}
               </a>
