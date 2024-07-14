@@ -1,0 +1,8 @@
+{
+  "__resolveType": "site/sections/SectionPreview/SectionPreview.tsx",
+  "sectionChildrens": [
+    {
+      "__resolveType": "hero"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "My New Page",
+  "path": "/caracteristicas",
+  "sections": [
+    {
+      "__resolveType": "Header"
+    },
+    {
+      "__resolveType": "site/sections/TabMenu/TabMenu.tsx",
+      "title": "Teste",
+      "tabMenu": [
+        {
+          "title": "ds",
+          "previewButton": "sd",
+          "htmlButton": "ds"
+        }
+      ]
+    },
+    {
+      "__resolveType": "Footer"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

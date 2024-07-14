@@ -99,7 +99,7 @@
   },
   "/.deco/blocks/Footer.json": {
     "blockType": "sections",
-    "__resolveType": "site/sections/Footer.tsx"
+    "__resolveType": "site/sections/Layout/Footer/Footer.tsx"
   },
   "/.deco/blocks/Vanilla.json": {
     "blockType": "sections",
@@ -113,9 +113,17 @@
     "blockType": "sections",
     "__resolveType": "site/sections/CardPreview/CardPreview.tsx"
   },
-  "/.deco/blocks/pages-Card-587243.json": {
-    "name": "Card",
-    "path": "/card",
+  "/.deco/blocks/Preview%20site%2Fsections%2FTestimonials.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Testimonials.tsx"
+  },
+  "/.deco/blocks/Preview%20site%2Fsections%2FSectionPreview%2FSectionPreview.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/SectionPreview/SectionPreview.tsx"
+  },
+  "/.deco/blocks/pages-My%2520New%2520Page-358304.json": {
+    "name": "My New Page",
+    "path": "/caracteristicas",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
   }
