@@ -89,7 +89,7 @@ export default function Header({
                   {link.label}
                 </a>
                 {link.subLinks && (
-                  <ul class="hidden group-hover:flex absolute top-[44px] z-20 flex-col gap-3 p-4 w-52 bg-white opacity-90 rounded-xl">
+                  <ul class="hidden group-hover:flex absolute top-[44px] z-20 flex-col gap-3 p-4 w-52 opacity-90 rounded-xl bg-primary-content">
                     {link.subLinks.map((subLink) => {
                       return (
                         <li>
@@ -199,7 +199,7 @@ export default function Header({
                 id={item?.id}
                 href={item?.href ?? "#"}
                 target={item?.href.includes("http") ? "_blank" : "_self"}
-                class={`bg-[#D9D9D9] h-8 px-3 flex justify-center items-center rounded-md no-underline`}
+                class={`bg-primary text-primary-content h-8 px-3 flex justify-center items-center rounded-md no-underline`}
               >
                 {item?.text}
               </a>

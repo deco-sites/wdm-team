@@ -57,7 +57,7 @@ export default function Footer({
   footerTopics,
 }: Props) {
   return (
-    <section class="bg-primary w-full relative z-10">
+    <section class="bg-primary w-full relative z-10 mt-8">
       <div class="max-w-screen-2xl m-auto py-8">
         <div class="px-6 py-8 md:px-[2.03rem] flex flex-col gap-12 lg:justify-between">
           <div class="flex flex-col md:flex-row justify-between gap-8">
