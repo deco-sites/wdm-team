@@ -7,14 +7,15 @@
     },
     {
       "__resolveType": "site/sections/TabMenu/TabMenu.tsx",
-      "title": "Teste",
+      "title": "Pricing",
       "tabMenu": [
         {
-          "title": "ds",
-          "previewButton": "sd",
-          "htmlButton": "ds"
+          "title": "Pricing",
+          "previewButton": "Preview",
+          "htmlButton": "HTML"
         }
-      ]
+      ],
+      "description": "<p>Quickly get a project started with any of our examples ranging from using parts of the UI to custom components and layouts using Tailwind CSS.</p>"
     },
     {
       "__resolveType": "Footer"

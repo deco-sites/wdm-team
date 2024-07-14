@@ -43,7 +43,7 @@ export default function CardPreview({
   ],
 }: Props) {
   return (
-    <div class="lg:container md:max-w-5xl lg:mx-auto mx-2 text-sm py-6 lg:py-20">
+    <div class="lg:container md:max-w-5xl lg:mx-auto text-sm lg:py-8">
       <div class="space-y-16">
         <div class="flex flex-col lg:flex-row gap-4 justify-between">
           <div class="space-y-6 lg:w-1/2">
@@ -58,7 +58,7 @@ export default function CardPreview({
               href={card.href}
               target="_blank"
             >
-              <div class="border-none rounded-xl overflow-hidden bg-[#1E1E1E]">
+              <div class="rounded-xl overflow-hidden bg-[#1E1E1E] hover:border-primary hover:border-2">
                 <div class="p-6 space-y-4">
                   <div class="space-y-2">
                     <h3 class="text-lg text-[#fff]">{card.title}</h3>
