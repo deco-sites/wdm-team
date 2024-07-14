@@ -17,7 +17,7 @@ const DEFAULT_IMAGE =
   "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/682eb374-def2-4e85-a45d-b3a7ff8a31a9";
 
 export default function CardPreview({
-  title = "Praticidade nos seus projetos",
+  title = "Basic Components for your projects",
   cards = [
     {
       title: "Title of Section #1",
@@ -43,7 +43,10 @@ export default function CardPreview({
   ],
 }: Props) {
   return (
-    <div class="lg:container md:max-w-5xl lg:mx-auto text-sm lg:py-8">
+    <div
+      class="lg:container md:max-w-5xl lg:mx-auto text-sm lg:py-8"
+      id="card-preview"
+    >
       <div class="space-y-16">
         <div class="flex flex-col lg:flex-row gap-4 justify-between">
           <div class="space-y-6 lg:w-1/2">
@@ -56,9 +59,8 @@ export default function CardPreview({
           {cards?.map((card) => (
             <a
               href={card.href}
-              target="_blank"
             >
-              <div class="rounded-xl overflow-hidden bg-[#1E1E1E] hover:border-primary hover:border-2">
+              <div class="rounded-xl overflow-hidden bg-[#1E1E1E] hover:border-primary hover:border-2 border-2 border-[#494a49]">
                 <div class="p-6 space-y-4">
                   <div class="space-y-2">
                     <h3 class="text-lg text-[#fff]">{card.title}</h3>

@@ -7,9 +7,15 @@
     },
     {
       "__resolveType": "site/sections/Hero.tsx",
-      "title": "<p>Componentes básicos</p>",
-      "description": "Nossos componentes são otimizados para criar uma experiência perfeita",
-      "cta": []
+      "title": "<p>Basic Components</p>",
+      "description": "Kick-start your project effortlessly with Preline UI's wide range of examples, using pre-built UI parts, custom components and layouts using Tailwind CSS.",
+      "cta": [
+        {
+          "text": "Get Started",
+          "outline": false,
+          "href": "/#card-preview"
+        }
+      ]
     },
     {
       "__resolveType": "site/sections/CardPreview/CardPreview.tsx",
@@ -22,7 +28,7 @@
           "readingTime": "teste",
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11627/6facd348-ad8a-46fe-85b7-0781fce8f6ad",
           "title": "Secões de preço",
-          "href": "/"
+          "href": "/caracteristicas"
         },
         {
           "tags": [],
@@ -77,28 +83,10 @@
       ]
     },
     {
-      "__resolveType": "site/sections/TabMenu/TabMenu.tsx",
-      "tabMenu": [
-        {
-          "title": "teste",
-          "previewButton": "Preview",
-          "htmlButton": "TSX"
-        }
-      ],
-      "title": "Características: Estatísticas"
-    },
-    {
       "__resolveType": "Footer"
     },
     {
-      "__resolveType": "website/sections/Seo/SeoV2.tsx",
-      "title": "Hackaton HTMX 5º Edition",
-      "titleTemplate": "Hackaton HTMX 5º Edition",
-      "description": "Hackaton developed by WMD Solutions",
-      "descriptionTemplate": "Hackaton developed by WMD Solutions",
-      "type": "website",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11627/7bcef8a9-0d9a-41cc-bff2-0dc6ed166298",
-      "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11627/43be9d1d-e499-42da-b878-d759de45971e"
+      "__resolveType": "SEOV2 global"
     }
   ],
   "__resolveType": "website/pages/Page.tsx",

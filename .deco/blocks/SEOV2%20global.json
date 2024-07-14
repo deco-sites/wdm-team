@@ -1,0 +1,11 @@
+{
+  "__resolveType": "website/sections/Seo/SeoV2.tsx",
+  "title": "Hackaton HTMX 5º Edition",
+  "titleTemplate": "Hackaton HTMX 5º Edition",
+  "description": "Hackaton developed by WMD Solutions",
+  "descriptionTemplate": "Hackaton developed by WMD Solutions",
+  "type": "website",
+  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11627/7bcef8a9-0d9a-41cc-bff2-0dc6ed166298",
+  "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11627/43be9d1d-e499-42da-b878-d759de45971e",
+  "jsonLDs": []
+}

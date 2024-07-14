@@ -19,6 +19,9 @@
     },
     {
       "__resolveType": "Footer"
+    },
+    {
+      "__resolveType": "SEOV2 global"
     }
   ],
   "seo": {

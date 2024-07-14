@@ -126,5 +126,9 @@
     "path": "/caracteristicas",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/SEOV2%20global.json": {
+    "blockType": "sections",
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
   }
 }
