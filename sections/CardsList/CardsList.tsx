@@ -55,7 +55,7 @@ export async function loader(
         return new Promise((resolve) => {
           setTimeout(() => {
             resolve('Requisição completa');
-          }, 1000);
+          }, 100);
         });
     }
 
