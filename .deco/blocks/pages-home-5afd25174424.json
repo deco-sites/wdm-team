@@ -19,6 +19,12 @@
     },
     {
       "__resolveType": "site/sections/CardPreview/CardPreview.tsx",
+      "cards": []
+    },
+    {
+      "__resolveType": "site/sections/CardsList/CardsList.tsx",
+      "quantityToShow": 3,
+      "quantityToShowByTime": 3,
       "cards": [
         {
           "tags": [],
@@ -78,6 +84,36 @@
           "date": "teste",
           "readingTime": "teste",
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11627/a4234e74-abdb-46eb-a6f4-d625967404c4",
+          "href": "/"
+        },
+        {
+          "tags": [],
+          "title": "Formulário hero",
+          "author": "Brendon",
+          "excerpt": "10 components",
+          "date": "teste",
+          "readingTime": "teste",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11627/a4234e74-abdb-46eb-a6f4-d625967404c4",
+          "href": "/"
+        },
+        {
+          "tags": [],
+          "title": "Secões de equipe",
+          "author": "Brendon",
+          "excerpt": "3 components",
+          "date": "teste",
+          "readingTime": "teste",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11627/729f46b0-2064-4795-aa66-c1163e51a3ee",
+          "href": "/"
+        },
+        {
+          "tags": [],
+          "title": "Secões de faq",
+          "author": "Brendon",
+          "excerpt": "3 components",
+          "date": "teste",
+          "readingTime": "teste",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11627/33f48249-71a2-402e-937e-ad821745d0a2",
           "href": "/"
         }
       ]
