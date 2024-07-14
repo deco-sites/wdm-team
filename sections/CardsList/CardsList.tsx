@@ -20,7 +20,7 @@ export interface Props {
 const DEFAULT_IMAGE =
   "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/682eb374-def2-4e85-a45d-b3a7ff8a31a9";
 
-export async function loader(
+export function loader(
     {
         quantityToShow = 0,
         quantityToShowByTime = 3,
@@ -50,16 +50,6 @@ export async function loader(
     }: Props,
     _req: Request,
 ) {
-
-    function simulateRequest() {
-        return new Promise((resolve) => {
-          setTimeout(() => {
-            resolve('Requisição completa');
-          }, 100);
-        });
-    }
-
-    await simulateRequest()
 
     if(cards.length < quantityToShow) {
         return {
@@ -94,7 +84,6 @@ export default function CardsList({
                 hx-get={useSection({ props: { quantityToShow: quantityToShow + quantityToShowByTime} })}
                 hx-trigger="revealed"
                 hx-swap="afterend"
-                hx-target="this"
                 class="grid grid-cols-1 md:grid-cols-3 gap-8"
             >
                 {cards.map((card, index) => {
