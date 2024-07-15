@@ -130,5 +130,9 @@
   "/.deco/blocks/SEOV2%20global.json": {
     "blockType": "sections",
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "/.deco/blocks/Preview%20site%2Fsections%2FCardPreview%2FCardPreview.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/CardPreview/CardPreview.tsx"
   }
 }

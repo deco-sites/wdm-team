@@ -32,9 +32,7 @@ export interface Props {
 }
 
 export async function loader(props: Props, req: Request) {
-  const FilePath = import.meta.resolve(
-    "site/sections/CardPreview/CardPreview.tsx",
-  );
+  const FilePath = import.meta.resolve("site/sections/Hero.tsx");
 
   const content = await fetch(FilePath).then((reponse) => reponse.text());
 
@@ -48,15 +46,11 @@ export default function TabMenu({
   content,
 }: SectionProps<typeof loader>) {
   const { title, description, tabMenu } = props;
-  const FilePath =
-    `{"sections":[{"__resolveType":"preview","block": "site/sections/CardPreview/CardPreview.tsx" },{"__resolveType":"deco"}]}`;
+  const FilePath = `{"sections":[{"__resolveType":"preview","block": "site/sections/Hero.tsx" },{"__resolveType":"deco"}]}`;
 
-  const URL_PREVIEW =
-    `https://bren--wdm-team.deco.site/live/previews/website/pages/Page.tsx?props=${
-      btoa(
-        FilePath,
-      )
-    }`;
+  const URL_PREVIEW = `https://bren--wdm-team.deco.site/live/previews/website/pages/Page.tsx?props=${btoa(
+    FilePath
+  )}`;
 
   return (
     <div class="container pt-24">
